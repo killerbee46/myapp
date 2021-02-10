@@ -1,25 +1,54 @@
-import logo from './logo.svg';
+
+import React from 'react';
 import './App.css';
+import Message from './Message';
+import MessageArea from './MessageArea';
+import SenderProfile from './SenderProfile';
+import UserProfile from './UserProfile';
+import NavigationBar from './NavigationBar';
+import Calling from './Calling';
+import VideoCalling from './VideoCalling';
+import SenderInformation from './SenderInformation';
+import VideoCall from './VideoCall';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+       <NavigationBar/>
+        <Message />
+        <Switch> 
+          <Route path="/user-profile">
+            <UserProfile />
+           </Route>
+           <Route path="/sender-profile">
+            <SenderProfile />
+          </Route>
+          <Route path="/call">
+              <Calling />
+            </Route> 
+            <Route path="/video-call">
+              <VideoCalling />
+            </Route>
+            <Route path="/VideoCall">
+              <VideoCall />
+            </Route>
+            <Route path="/sender-info">
+              <SenderInformation />
+            </Route>
+        </Switch>
+        <MessageArea />
+    </Router>
   );
 }
 
+
 export default App;
+
+

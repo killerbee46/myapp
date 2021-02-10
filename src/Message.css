@@ -1,0 +1,41 @@
+.Message{
+  height: 100%;
+  overflow: hidden;
+  width: 39.9%;
+}
+.messagebar{
+   margin: 5px;
+   background-color: gray; 
+   height: 50px;
+   border-radius: 5px;
+}
+.txt_prof{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 5px;
+}
+a{
+  text-decoration: none;
+}
+.name{
+  font-weight: bold;
+  position:relative;
+  top: -30px;
+  left: 10px;
+  color: black;
+}
+.newmessage{
+  font-weight: bold;
+  position:relative;
+  top: -30px;
+  left: 10px;
+  color: black;
+}
+.txt{
+  position: relative;
+  top: -30px;
+  left: 65px; 
+  color: black;
+}
+

@@ -1,0 +1,86 @@
+.box{
+    width: 100%;
+    height: 100%;            
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: black;  
+    opacity: 50%;
+}
+.sender-info{
+    overflow: hidden;
+    text-align: center;
+    width: 25%;
+    min-height: 80%;
+    position: absolute;
+    right: 0;
+    left: 75%;
+    top: 0;
+    bottom: 0;
+    background: orangered;
+    z-index: 10;
+}
+.close-icon{
+    float: right;
+    margin: 5px;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    border: 2px;
+}
+.stack-top{
+    z-index: 9;
+}
+.sender-photo{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 200px;
+}
+.avatar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 200px;
+    width: 200px;
+    border: 4px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.sender-name{
+    font-size: 20px;
+}
+
+ul{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-left: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  li{
+    padding-left: 40px;
+    padding-right: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 30px;
+    width: 100%;
+    background-color: burlywood;
+    border: 2px solid black;
+  }
+  .option{
+      text-decoration: none;
+      color:blanchedalmond;
+      background-color: chocolate;
+      border-top:2px solid ghostwhite ;
+      padding: 10px;
+      font-size: large;
+  }

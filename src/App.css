@@ -1,27 +1,40 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
+  padding: 10px;
   height: 40vmin;
   pointer-events: none;
+}
+.profile_photo{
+  vertical-align: middle;
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ margin : 5px;
+}
+.profile_photo:hover{
+  opacity: 65%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    height: 50px;
+    width: 50px;
   }
 }
 
-.App-header {
+
+
+
+.app-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  justify-content: space-between;
 }
 
 .App-link {
@@ -36,3 +49,81 @@
     transform: rotate(360deg);
   }
 }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  width: 40%;
+  border-radius: 4px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+body {
+  background-color: rgb(31, 30, 30);
+}
+.search{
+margin-top: 20px;
+height: 30px;
+width: 390px;
+}
+.dropdown{
+margin-left: 10px;
+  top: 30px;
+right: 5px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 2000px) {
+  
+.col-nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.col-nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.col-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.col-nav .icon {
+  visibility: visible;
+}
+}
+
+

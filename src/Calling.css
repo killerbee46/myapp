@@ -1,0 +1,81 @@
+.fullscreen{
+    max-width: 100%;
+    max-height: 100%;
+}
+.callbox{
+    width: 100%;
+    height: 100%;            
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 7;
+    background: url('https://i.ytimg.com/vi/4t0eY_2E21s/maxresdefault.jpg') center / cover;
+ 
+}
+.bg-image{
+   background-color: black;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   opacity: 50%;
+    z-index: 9;
+}
+.calling{
+    text-align: center;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left:0 ;
+    top: 0;
+   z-index: 10;
+}
+.close-icon{
+    float: right;
+    margin: 5px;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    border: 2px;
+}
+.stack-top{
+    z-index: 9;
+}
+.sender-photo{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 200px;
+}
+.avatar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 200px;
+    width: 200px;
+    border: 4px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.sender-name{
+    font-size: 20px;
+    color: blanchedalmond;
+}
+.call-status{
+    color: blanchedalmond;
+}
+.call-control{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.185);
+}
+.call-control img{
+    margin-left : 150px;
+}
